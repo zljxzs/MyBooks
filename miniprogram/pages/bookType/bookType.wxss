@@ -1,0 +1,103 @@
+/* pages/bookType/bookType.wxss */
+
+.main {
+  background-color: #f4f4f4;
+}
+
+.main-head {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #f4f4f4;
+  margin-bottom: 3%;
+}
+
+.seach {
+  background-color: #fefefe;
+  width: 92%;
+  margin-top: 3%;
+}
+
+.placeholder {
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.main-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-body-left {
+  flex: 0 0 16%;
+  font-size: 13px;
+}
+
+.left-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12%;
+  /* border-bottom: 1px solid #dedede; *//*分割线*/
+}
+
+.active {
+  background: #fff;
+  color: #e88024;
+  border-left: 8rpx solid #e88024;
+}
+
+.main-body-right {
+  flex: 0 0 84%;
+  background-color: #fefefe;
+}
+
+.body-right {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 6%;
+}
+
+.right-item {
+  width: 43%;
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  margin-left: 4%;
+}
+
+.type-image {
+  width: 34px;
+  height: 48px;
+}
+
+.type-content {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin-left: 6%;
+}
+
+.text-1 {
+  margin-top: 6%;
+  font-size: 14px;
+}
+
+.text-2 {
+  margin-top: 8%;
+  font-size: 10px;
+}
+
+.other-type {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 30px;
+  font-size: 12px;
+  margin-top: 3px;
+}
+.other-type button {
+  width: 25%;
+}

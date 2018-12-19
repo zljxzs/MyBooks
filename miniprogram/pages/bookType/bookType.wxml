@@ -1,0 +1,43 @@
+<!--pages/bookType/bookType.wxml-->
+<view class='main'>
+  <view class='main-head'>
+    <input class='seach' placeholder='点击搜索想要的书籍' placeholder-class='placeholder'></input>
+  </view>
+  <view class='main-body' style='height:510px'>
+    <!--左侧栏-->
+    <scroll-view scroll-y="true" class="main-body-left">
+      <!-- navActive 用来设置选中后，导航栏的样式 -->
+      <view class="left-item {{navActive == item.id ? 'active' : ''}}" wx:for="{{types}}" wx:key="{{item.id}}" data-id='{{item.id}}' catchtap='chooseType'>{{item.name}}</view>
+    </scroll-view>
+
+    <!--右侧栏-->
+    <!-- bindscroll滚动时触发，当下滑右侧内容时，左侧菜单会移动到相应类别 -->
+    <scroll-view scroll-y="true" scroll-into-view="{{contentActive}}" id='{{index}}' bindscroll="scroll" scroll-with-animation="true" class='main-body-right'>
+      <view class="body-right">
+        <!-- id 标记锚点  -->
+        <view class="right-item" wx:for="{{bookTypes}}" id='no{{item.id}}' wx:key="{{item.id}}">
+          <view wx:if="{{item.id==0}}">
+            <image class='type-image' src="/images/swiper/frxxzxjp.jpg"></image>
+          </view>
+          <view wx:elif="{{item.id==1}}">
+            <image class='type-image' src="/images/swiper/hhzyhnt.jpg"></image>
+          </view>
+          <view wx:else>
+            <image class='type-image' src="/images/swiper/rdzs.jpg"></image>
+          </view>
+
+          <view class='type-content'>
+            <text class='text-1'>{{item.name}}</text>
+            <text class='text-2' decode="ensp">{{item.name}}&ensp;{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='other-type'>
+    <button size="mini" bindtap='otherType1'>其他分类</button>
+    <button size="mini" bindtap='otherType2'>其他分类</button>
+    <button size="mini" bindtap=''>其他分类</button>
+    <button size="mini" bindtap=''>其他分类</button>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/book/book.wxml-->
+
+<!--此模板需要单独导入-->
+<import src="../../template/template.wxml" />
+
+<!-- 轮播图 -->
+<view class='backgroup'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" circular="true">
+    <swiper-item wx:for="{{swiperInfo}}" wx:key="postid">
+      <image class='swiper-image' src="{{item.swipersrc}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <view class='headline'>
+    <view class='headline-1'>书币：1680</view>
+    <view class='headline-2'>{{time}}</view>
+  </view>
+
+  <view class='main'>
+    <view class="book" wx:for="{{bookList}}" wx:for-item="item" wx:key="postid">
+      <!--列表index下标取值data-index="{{index}}"-->
+      <view catchtap="onTap" data-postid="{{item.postid}}">
+        <template is="book-item" data="{{...item}}" />
+      </view>
+    </view>
+  </view>
+
+</view>

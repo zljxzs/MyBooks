@@ -1,0 +1,43 @@
+<!--pages/book/book-detail/book-detail.wxml-->
+<!-- <text>pages/book/book-detail/book-detail.wxml</text> -->
+
+<view class="main">
+  <!-- 基本信息 -->
+  <view class='detail'>
+    <view class='detail-one'>
+      <image class="bookImg" src="{{imgsrc}}"></image>
+    </view>
+    <view class='detail-two'>
+      <text class='bookInfo bookInfo-1'>{{title}}</text>
+      <text class='bookInfo bookInfo-2' decode="ensp">{{grade}}&ensp;{{score}}</text>
+      <text class='bookInfo bookInfo-3'>{{author}} | {{type}}</text>
+      <text class='bookInfo bookInfo-4'>{{words}}</text>
+    </view>
+  </view>
+
+  <!-- 简介 -->
+  <view class='describe'>
+    <view class='describe-1'>简介</view>
+    <text class='describe-2'>{{describe}}</text>
+  </view>
+
+  <!-- 更新状态 -->
+  <view class='status'>
+    <view class='status-1'>状态</view>
+    <view class='status-2'>{{status}}</view>
+  </view>
+
+  <!-- 评论 -->
+  <view class='comment'>
+    <view class='comment-1'>评论</view>
+    <view class='comment-2'>
+      <view class='comment-2-1'>{{userInfo.userName}}</view>
+      <view class='comment-2-2'>{{commentDate}}</view>
+    </view>
+    <text class='comment-3'>{{comment}}</text>
+  </view>
+
+  <!-- 书架 试读 下载 -->
+  <!-- <view class='other'></view> -->
+
+</view>

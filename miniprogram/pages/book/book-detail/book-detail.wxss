@@ -1,0 +1,153 @@
+/* pages/book/book-detail/book-detail.wxss */
+
+.main {
+  background-color: #f4f4f4;
+  margin: 0, auto;
+  font-family: "Microsoft YaHei";
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.detail-one {
+  flex: 0 0 40%;
+  font-size: 12px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.bookImg {
+  width: 70%;
+  height: 93%;
+  margin-left: 26%;
+  margin-right: 4%;
+}
+
+.detail-two {
+  flex: 0 0 57%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  margin-left: 4%;
+}
+
+.bookInfo {
+  margin-bottom: 3%;
+}
+
+.bookInfo-1 {
+  font-size: 18px;
+  margin-top: 2%;
+}
+
+.bookInfo-2 {
+  font-size: 16px;
+  color: #ff7300;
+}
+
+.bookInfo-3 {
+  font-size: 14px;
+  color: #2b99ff;
+  margin-top: 4%
+}
+
+.bookInfo-4 {
+  font-size: 14px;
+  color: #757474;
+  margin-top: 3%
+}
+
+.describe {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+}
+
+.describe-1 {
+  font-size: 17px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+.describe-2 {
+  font-size: 14px;
+  letter-spacing: 1px; /* 字间距 */
+  line-height: 23px; /* 行间距 */
+  color: #646262;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+
+.status {
+  background-color: #fefefe;
+  margin-top: 0.5%;
+  display: -webkit-box;
+  -webkit-box-align: center;
+}
+
+.status-1 {
+  font-size: 17px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 5%;
+}
+
+.status-2 {
+  font-size: 14px;
+  color: #646262;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 4%;
+}
+
+.comment {
+  background-color: #fefefe;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-1 {
+  font-size: 18px;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+.comment-2 {
+  font-size: 15px;
+  margin-top: 4%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row;
+  color: #757474;
+}
+
+.comment-2-1 {
+  flex: 0 0 72%;
+}
+
+.comment-2-2 {
+  flex: 0 0 28%;
+  justify-content: flex-end;
+}
+
+.comment-3 {
+  font-size: 14px;
+  letter-spacing: 1px; /* 字间距 */
+  line-height: 23px; /* 行间距 */
+  color: #646262;
+  margin-top: 3%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3%;
+}
+
+.other {
+  background-color: #fefefe;
+  margin-top: 2%;
+}

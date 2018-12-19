@@ -1,0 +1,67 @@
+/* pages/book/book.wxss */
+
+.swiper-image {
+  width: 100%;
+  height: 300rpx;
+}
+
+.backgroup {
+  background-color: #f4f4f4;
+  margin: 0, auto;
+}
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  margin-left: 6%;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 88%;
+  font-size: 12px;
+  background-color: #fefefe;
+  color: #E88024;
+}
+
+.headline-1 {
+  flex: 0 0 58%;
+  margin-left: 3%;
+  /* color: #3498fc; */
+}
+
+.headline-2 {
+  flex: 0 0 36%;
+  justify-content: flex-end;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.book {
+  flex: 0 0 25.3%;
+  margin-left: 6%;
+  margin-bottom: 4%;
+  font-size: 12px;
+}
+
+.bookOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bookImg {
+  height: 260rpx;
+  margin-top: 4%;
+  width: 100%;
+}
+
+.bookOneText {
+  padding-top: 8%;
+  display: flex;
+  justify-content: center;
+}

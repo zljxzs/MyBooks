@@ -1,0 +1,8 @@
+<!-- 此页可以设置多个模板，以name区分 -->
+<!--需要将此模板的name和样式分别导入所需页面-->
+<template name="book-item">
+  <view class="bookOne">
+    <image class="bookImg" src="{{imgsrc}}"></image>
+    <view class='bookOneText'>{{title}}</view>
+  </view>
+</template>
