@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/my/my",
     "pages/bookType/bookType",
     "pages/bookType2/bookType2",
     "pages/bookType3/bookType3",
     "pages/book/book",
     "pages/book/book-detail/book-detail",
     "pages/index/index",
-    "pages/my/my",
+   
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",

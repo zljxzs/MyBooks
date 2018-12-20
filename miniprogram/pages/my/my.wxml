@@ -1,2 +1,33 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class='main'>
+
+  <!-- 基本资料 -->
+  <view class='my-info'>
+    <image class='theImage' src="/images/swiper/fang.jpg"></image>
+    <text class='my-info-text'>儒家</text>
+  </view>
+
+  <!-- 个人足迹 -->
+  <view class='my collect'>
+    <view class='collect-one' wx:for="{{[1,2,3,4]}}" wx:key="postid">
+      <view class='toCenter'>
+        <image class='theImage collect-image' src="/images/swiper/fang.jpg"></image>
+      </view>
+      <text class='toCenter collect-text'> {{item}} </text>
+    </view>
+  </view>
+
+  <!-- 各项功能 -->
+  <view class='my functions'>
+    <view class='functions-one' wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="postid">
+      <view class='toCenter'>
+        <image class="theImage functions-image" src="/images/swiper/fang.jpg"></image>
+      </view>
+      <text class='toCenter functions-text'> {{item}} </text>
+    </view>
+  </view>
+
+  <!-- 其他 -->
+  <view class='my other'></view>
+
+</view>
